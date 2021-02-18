@@ -36,9 +36,15 @@
         padding: 0;
       }
       body {
-        background-color: #e6002d;
-        color: #fff;
+        background-color: #fff;
+        color: #e6002d;
         font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+      .container {
+        background-image: url('assets/flexbox.png');
+        background-repeat: no-repeat;
+        background-size: 3vw;
+        background-position: right 10px bottom 10px;
       }
       .title-container {
         display: flex;
@@ -46,16 +52,23 @@
         align-items: center;
         height: 100vh;
       }
-      @media (orientation: portrait) {
-        .title-container {
-          flex-direction: column;
-        }
-      }
       .title {
         text-align: center;
         font-style: italic;
         font-size: 10vw;
         font-weight: 600;
+        pointer-events: none;
+      }
+      @media (orientation: portrait) {
+        .container {
+          background-size: 5vh;
+        }
+        .title-container {
+          flex-direction: column;
+        }
+        .title {
+          font-size: 5vh;
+        }
       }
       footer {
         position: fixed;
