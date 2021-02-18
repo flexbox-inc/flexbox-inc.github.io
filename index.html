@@ -52,6 +52,11 @@
         align-items: center;
         height: 100vh;
       }
+      @supports (-webkit-touch-callout: none) {
+        .title-container {
+          height: -webkit-fill-available;
+        }
+      }
       .title {
         text-align: center;
         font-style: italic;
