@@ -1,9 +1,89 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html amp lang="en">
   <head>
+    <meta charset="utf-8" />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
     <title>FLEXBOX, Inc.</title>
+    <link rel="canonical" href="https://flexbox-inc.com/" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- prettier-ignore -->
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      }
+      @-webkit-keyframes -amp-start { from { visibility: hidden; } to { visibility: visible; } }
+      @-moz-keyframes -amp-start { from { visibility: hidden; } to { visibility: visible; } }
+      @-ms-keyframes -amp-start { from { visibility: hidden; } to { visibility: visible; } }
+      @-o-keyframes -amp-start { from { visibility: hidden; } to { visibility: visible; } }
+      @keyframes -amp-start { from { visibility: hidden; } to { visibility: visible; } }
+    </style>
+    <noscript>
+      <style amp-boilerplate>
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none;
+        }
+      </style>
+    </noscript>
+    <style amp-custom>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #e6002d;
+        color: #fff;
+        font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+      .title-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+      }
+      @media (orientation: portrait) {
+        .title-container {
+          flex-direction: column;
+        }
+      }
+      .title {
+        text-align: center;
+        font-style: italic;
+        font-size: 10vw;
+        font-weight: 600;
+      }
+      footer {
+        position: fixed;
+        width: 100%;
+        bottom: 0.5rem;
+      }
+      footer p {
+        font-size: 0.5rem;
+        text-align: center;
+        letter-spacing: 0.1rem;
+        opacity: 0.5;
+      }
+    </style>
   </head>
   <body>
-    <p><small>&copy; 2020 FLEXBOX, Inc.</small></p>
+    <div class="container">
+      <div class="title-container">
+        <div class="title">F</div>
+        <div class="title">L</div>
+        <div class="title">E</div>
+        <div class="title">X</div>
+        <div class="title">B</div>
+        <div class="title">O</div>
+        <div class="title">X</div>
+      </div>
+      <footer>
+        <p><small>&copy; 2021 FLEXBOX, Inc.</small></p>
+      </footer>
+    </div>
   </body>
 </html>
